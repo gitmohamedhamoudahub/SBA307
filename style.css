@@ -1,0 +1,286 @@
+@keyframes animate{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(90deg)}
+    100%{transform: rotate(360deg);}
+}
+
+@keyframes animate2{
+    0%{transform: rotate(360deg);}
+    50%{transform: rotate(90deg)}
+    100%{transform: rotate(0deg);}
+}
+@keyframes animate3{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(90deg)}
+
+    100%{transform: rotate(360deg);}
+}
+
+@keyframes move{
+    0% {margin-left: 0px;}
+    25% {margin-left: 25%;}
+    50% {margin-left: 50%;}
+    75% {margin-left: 75%;}
+    100% {margin-left: 100%;}
+}
+@keyframes move2{
+    0% {margin-left: 0px;scaleX(-1);}
+    25% {margin-left: 25%;}
+    50% {margin-left: 50%;}
+    75% {margin-left: 75%;}
+    100% {margin-left: 100%;}
+}
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+.newsLetter i:nth-child(1)
+{
+    border-radius: 23% 77% 21% 79% / 24% 75% 25% 76%    ;
+    /* border-radius: 50%; */
+    animation: animate 7s linear infinite;
+}
+
+.newsLetter i:nth-child(2)
+{
+    border-radius: 23% 77% 21% 79% / 24% 75% 25% 76%    ;
+    /* border-radius: 50%; */
+    animation: animate2 6s linear infinite;
+}
+
+.newsLetter i:nth-child(3)
+{
+    border-radius: 23% 77% 21% 79% / 24% 75% 25% 76%    ;
+    /* border-radius: 50%; */
+    animation: animate3 5s linear infinite;
+}
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+
+body {
+    display: block;
+    margin: 0;
+    padding: 0%;
+    /* width: 100%; */
+    background-color: whitesmoke;
+}
+
+/* Set the border for wire framing */
+.card1,
+.card2,
+.bannerCarsouelSlide,
+.bannerCards,
+.bannerContainer,
+.mainContainer,
+.footerSection,
+.navigationContainer,
+.logoArea {
+    border: 0px solid black;
+    /* height: 1000px; */
+}
+
+.mainContainer{
+display: flex;
+justify-items: center;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+/* border: 1px solid black; */
+}
+
+.bannerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* width: 100vw; */
+height: auto;
+background-color: white !important;
+}
+
+.bannerCarsouelSlide {
+    /* border: 2px solid red; */
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px; */
+    width: 70vw;
+    color: black;
+}
+
+.bannerCards {
+width: 100%;    
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+margin: 5px;
+   background-image: url("https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-blend-mode: luminosity;
+}
+.cards{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.card1,
+.card2 {
+    display: flex;
+    /* width: 20vw; */
+    /* height: 30%; */
+    margin: 10px;
+    /* margin-left: 10px; */
+}
+
+
+
+
+.footerSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100vw; */
+
+}
+
+.navigationContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    border-bottom: 2px solid rgba(0, 2, 0, 0.2);
+
+}
+
+.logoArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.footerText,
+.footerSection {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: gray !important;
+}
+
+
+.newsLetter input[type="submit"]{
+    position: relative;
+    width: 200px;
+margin: 5px;
+background: linear-gradient(45deg, goldenrod,whitesmoke) ;
+border: 2px solid goldenrod;
+border-radius: 40px;
+cursor: pointer !important;
+
+}
+
+.newsLetter input[type="submit"]:hover{
+    width: 200px;
+    margin: 5px;
+    background: linear-gradient(45deg,yellow, goldenrod) ;
+    border: 1px solid black;
+    border-radius: 40px;
+    cursor: pointer;
+    
+    }
+
+.subscribeNewsLetter{
+    color: black;
+    font-style: italic;
+    
+
+}
+.newsLetterInput input{
+    position: relative;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid  goldenrod;
+    border-radius: 40px;
+}
+.newsLetter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+    border: 5px solid  goldenrod;
+    border-radius: 40px;
+    padding: 15px;
+    position: relative;
+    /* background: linear-gradient(180deg,,white); */
+    font-style: italic;
+}
+
+.newsLetter i{
+    position: absolute;
+    inset: 0;
+    border: 2px solid goldenrod ;
+    transition: 0.1s;;
+}
+
+.newsLetterInput{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+.borderItem{
+    color: #00ff0f;
+}
+.outdoorWelcome{
+    /* border: 1px solid goldenrod ; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+table tr {
+   border-bottom: 2px solid goldenrod;
+
+}
+
+.welcomeText div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+.hikerGif{
+    width: 100%;
+    height: 100px;
+background-color: white !important;
+overflow: hidden !important;
+position: relative !important;
+}
+.hikerImg{
+    width: 100px;
+    height: 100px;
+    position: relative  ;
+    animation:move 25s linear infinite;
+    
+}
+
+.hikerImg3{
+    width: 150px;
+    height: 100px;
+    position: relative  ;
+    animation:move2 25s linear infinite;
+    
+}
